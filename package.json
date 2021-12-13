@@ -1,0 +1,14 @@
+{
+  "name": "object_send_tutorial",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "wasm_build": "wasm-pack build object_send_wasm --target web --out-dir ../src/object_send_wasm --release"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "vite": "^2.7.1"
+  }
+}

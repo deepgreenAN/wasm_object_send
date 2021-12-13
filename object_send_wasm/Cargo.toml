@@ -1,0 +1,25 @@
+[package]
+name = "object_send_wasm"
+version = "0.1.0"
+authors = ["deepgreenAN <asami73dgreen63@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "object_send_wasm"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = []
+
+[dependencies]
+wasm-bindgen = { version = "0.2.78", features = ['serde-serialize']}
+#wasm-bindgen = { version = "0.2.78"}
+serde = { version = "1.0.130", features = ["derive"] }
+js-sys = "0.3.55"
+chrono = "0.4.19"
+
+[dev-dependencies]
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
