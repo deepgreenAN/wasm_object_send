@@ -1,7 +1,12 @@
-export type SomeObjectSerde = {
-    num: number;
-    str: string;
-    list: number[];
+// export type SomeObjectSerde = {
+//     num: number;
+//     str: string;
+//     list: number[];
+// }
+export interface SomeObjectSerde {
+    num: number,
+    str: string,
+    list: number[]
 }
 
 export class SomeObjectClass {
